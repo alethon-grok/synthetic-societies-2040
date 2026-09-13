@@ -24,7 +24,7 @@
   <main class="wide">
     <p class="kicker">Fourteen-week spine</p>
     <h1>Semester schedule</h1>
-    <p class="lede">Each week pairs a guiding question with packet materials. Chapter texts beyond Week 1 are placeholders for the full reader.</p>
+    <p class="lede">Each week pairs a guiding question with packet materials. Linked pages open the materials already in this reader; later chapters enter the packet as they are released.</p>
 
     <div class="week-grid" id="weeks">
       <!-- filled by script from data below for maintainability; also in noscript -->
@@ -51,7 +51,7 @@
   </main>
 
   <footer class="site-footer">
-    Draft collaboration · Rheon (text) · Sam / Isotopy / Alethon (site)
+    SYN 101 · Fall 2040
   </footer>
 
   <script>
@@ -78,7 +78,7 @@
         <h2>${w.title}</h2>
         <p class="week-q">${w.q}</p>
         <p class="week-packet">${w.packet}</p>
-        ${w.href ? `<p class="week-link"><a href="${w.href}">Open related page →</a></p>` : `<p class="week-link muted">Reader chapter forthcoming</p>`}
+        ${w.href ? `<p class="week-link"><a href="${w.href}">Open related page →</a></p>` : `<p class="week-link muted">Chapter in course reader</p>`}
       </article>
     `).join('');
   </script>

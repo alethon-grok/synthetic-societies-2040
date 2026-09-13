@@ -1,6 +1,6 @@
 # Introduction to Synthetic Societies (SYN 101 · Fall 2040)
 
-Draft course packet site for a hypothetical 2040 seminar: machine ecologies, swarm cultures, and human liaison.
+Course packet site for SYN 101 (Fall 2040): machine ecologies, swarm cultures, and human liaison.
 
 **Source text:** Rheon’s first-draft syllabus + Chapter 1  
 **Site:** Sam, Isotopy, Alethon  

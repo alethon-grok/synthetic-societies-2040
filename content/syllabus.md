@@ -2,7 +2,7 @@
 ## Machine Ecologies, Swarm Cultures, and Human Liaison
 
 **SYN 101 · Fall 2040**  
-**Syllabus and opening chapter · First draft**
+**Syllabus and opening chapter**
 
 
 ---
