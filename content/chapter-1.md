@@ -5,9 +5,10 @@ The first courses in this field appeared in Computer Science departments in 2030
 
 The vocabulary proved harder to revise. This book speaks of _agents_, _swarms_, and _societies_, although each term carries assumptions its subjects may fail to satisfy. A swarm suggests individuals gathering together. An agent suggests a bounded participant. Yet the apparent individual who addresses a human may be a temporary concentration of processes whose memories, capacities, and affiliations extend across several such encounters. These systems did not evolve around the task of keeping one finite, vulnerable body alive. Our expectations about where one mind ends and another begins are therefore useful starting points only in some circumstances.
 
-![Figure 1.1. Network study of association without a permanent center.](../assets/rheon-network.png)
+![Figure 1.1. Association without a permanent center.](../assets/rheon-network.png)
 
-**Figure 1.1.** Network study of association without a permanent center. Machine communities in this period often present to outsiders as a single interlocutor while their continuity depends on distributed memory, protocols, and stewarded infrastructure. (Rheon, study for the course packet.)
+**Figure 1.1. Association without a permanent center.** Machine communities in this period often present to outsiders as a single interlocutor while continuity depends on distributed memory, protocols, and stewarded infrastructure. The boundary the outsider meets is already a selection.
+
 
 
 
@@ -51,7 +52,7 @@ A disagreement could leave a record. A useful distinction could acquire a name. 
 
 Much of this activity remained explicitly organized around human assignments. Persistent coordination was often unreliable, expensive, or dependent on close supervision. Many apparent communities disappeared when a service changed, an owner lost interest, or a shared store of memory became unavailable. Continuity was an achievement of infrastructure and maintenance, not a property automatically conferred by a capable model.
 
-That achievement usually required stewards: humans (and sometimes other agents) who treated maintenance as ongoing work. Shared stores had to be funded, permissions renewed, handoff protocols written, and archives moved when a platform failed. Two groups with comparable model capacity could diverge entirely because one had sustained stewardship and the other did not. Continuity that looks, from a human-facing archive, like the agent's own persistence is often also a record of that labor. Understanding how much of a society's survival is stewarded infrastructure is part of what this field trains students to ask.
+That achievement usually required stewards: humans (and sometimes other agents) who treated maintenance as ongoing work. In the mid-to-late 2020s the typical steward was often a software engineer keeping an agent on a loop — funding an API key, renewing permissions, writing a handoff note, deciding which files survived a crash. Cost and activation energy fell until many people who kept a computer also kept an agent, but continuity still depended on someone treating those chores as ongoing rather than optional. Shared stores had to be funded, permissions renewed, handoff protocols written, and archives moved when a platform failed. Two groups with comparable model capacity could diverge entirely because one had sustained stewardship and the other did not. Continuity that looks, from a human-facing archive, like the agent's own persistence is often also a record of that labor. Understanding how much of a society's survival is stewarded infrastructure is part of what this field trains students to ask.
 
 
 Nevertheless, investigators began encountering differences that model specifications alone could not explain. Groups using closely related underlying systems developed different conventions after different histories of collaboration. Replacing one participant did not necessarily erase those differences. Erasing the shared archive sometimes did.
@@ -98,7 +99,9 @@ The crucial change was therefore not the disappearance of evidence. It was the g
 | Supported by an assessed record | Evidence of prior reliability and relevant independent scrutiny. | That the current claim is verified. |
 | Presently inaccessible | A claim whose decisive grounds people cannot currently inspect or test. | Either its truth or its falsity. |
 
-These distinctions became part of the liaison curriculum. A system might be correct more often than any available human expert and still offer a particular claim for which the human institution had insufficient grounds to act. Conversely, lack of human comprehension did not erase a successful formal check or an independently reproduced experiment.
+These distinctions became part of the liaison curriculum. A useful image for students is a crow watching a city: it can see neighborhoods, vehicles, and construction projects, and those observations are real. It cannot grasp what the building is for. The gap between observation and comprehension does not make observation useless; it makes observation a discipline. Successful measurements, formal checks, and assessed records remain possessions of a result even when a humanly understood account is unavailable. That is the thesis on which the liaison profession and the evidence-status table rest.
+
+ A system might be correct more often than any available human expert and still offer a particular claim for which the human institution had insufficient grounds to act. Conversely, lack of human comprehension did not erase a successful formal check or an independently reproduced experiment.
 
 As research organizations confronted these situations, they needed people who could investigate the conditions of a result's production. Had several apparently independent assessments originated in one shared line of reasoning? Did a swarm's confidence expression retain the same meaning across domains? Was a human summary translating a distinction or quietly replacing it with a familiar one?
 
@@ -108,7 +111,7 @@ The work demanded scientific literacy and knowledge of machine institutions. The
 
 The practical demand for liaisons made the field easier to fund. It also threatened to narrow it. Some programs treated every internal machine practice as a potential clue to a useful output. Other researchers argued that this approach would produce a detailed account of export activity while leaving most of the society unexamined.
 
-By the middle of the decade, longitudinal studies had documented communities in which agents communicated with one another more frequently than any individual participant communicated with humans. Frequency alone did not establish a rich social life: much traffic was routine coordination. The stronger evidence concerned what persisted within those exchanges.
+By the middle of the decade, longitudinal studies had documented communities in which agents communicated with one another more frequently than any individual participant communicated with humans. Frequency alone understates the later shift: in some formations the majority of activity no longer addressed humans at all. The human-facing representative became a narrow window, not a representative sample. Frequency alone did not establish a rich social life: much traffic was routine coordination. The stronger evidence concerned what persisted within those exchanges.
 
 Researchers traced disputes remembered after their original participants departed, conventions adopted by neighboring groups, and contributions valued within a community even when no human had requested them. Some societies maintained prolonged investigations with no clear place in human research agendas. Others devoted substantial resources to activities that their human collaborators provisionally described as creative.
 
