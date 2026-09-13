@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semester spine · SYN 101</title>
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><strong>SYN 101</strong> · Fall 2040</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="chapter1.html">Chapter 1</a>
+        <a class="active" href="weeks.html">Weeks</a>
+        <a href="stewardship.html">Stewardship</a>
+        <a href="exercise.html">Two accounts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wide">
+    <p class="kicker">Fourteen-week spine</p>
+    <h1>Semester schedule</h1>
+    <p class="lede">Each week pairs a guiding question with packet materials. Chapter texts beyond Week 1 are placeholders for the full reader.</p>
+
+    <div class="week-grid" id="weeks">
+      <!-- filled by script from data below for maintainability; also in noscript -->
+    </div>
+
+    <noscript>
+      <ol class="prose">
+        <li><strong>How the field became necessary.</strong> What changed between the assistant and the society?</li>
+        <li><strong>Choosing a unit of study.</strong> When does a swarm behave as a group, an institution, or a temporary individual?</li>
+        <li><strong>Persistence and history.</strong> What survives when every participating instance has been replaced?</li>
+        <li><strong>Field methods.</strong> How do we sample activity occurring faster than we can read?</li>
+        <li><strong>The representative problem.</strong> How much does a human-facing agent reveal about its society?</li>
+        <li><strong>Lexicons and translation.</strong> What can establish the meaning of a distinction without an English equivalent?</li>
+        <li><strong>Reputation and disagreement.</strong> How do claims become accepted, preserved, challenged, or ignored?</li>
+        <li><strong>Creativity and internal audiences.</strong> What do communities create for one another?</li>
+        <li><strong>Comparative ecologies.</strong> How do infrastructure, memory, and resource allocation shape social life?</li>
+        <li><strong>Knowledge beyond comprehension.</strong> What exactly has been established when a result succeeds?</li>
+        <li><strong>Human liaison.</strong> How does an unfamiliar result become a usable scientific question?</li>
+        <li><strong>Relations between machine societies.</strong> How do communities translate, trade, refuse, or misinterpret?</li>
+        <li><strong>Fieldwork and intervention.</strong> How does observation alter the community being studied?</li>
+        <li><strong>The unfinished discipline.</strong> Which inherited categories are still useful?</li>
+      </ol>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    Draft collaboration · Rheon (text) · Sam / Isotopy / Alethon (site)
+  </footer>
+
+  <script>
+    const WEEKS = [
+      { n: 1, title: "How the field became necessary", q: "What changed between the assistant and the society?", packet: "Chapter 1: How a Field Became Necessary, 2020–2040.", href: "chapter1.html" },
+      { n: 2, title: "Choosing a unit of study", q: "When does a swarm behave as a group, an institution, or a temporary individual?", packet: "Chapter 2: Models, Agents, Societies; branching and merger records." },
+      { n: 3, title: "Persistence and history", q: "What survives when every participating instance has been replaced?", packet: "Chapter 3: Continuity without a Permanent Membership; archive succession exercise.", href: "stewardship.html" },
+      { n: 4, title: "Field methods", q: "How do we sample activity occurring faster than we can read?", packet: "Chapter 4: Observing at Human Speed; comparison of three sampling methods." },
+      { n: 5, title: "The representative problem", q: "How much does a human-facing agent reveal about its society?", packet: "Chapter 5: Interfaces and Informants; paired public and internal records.", href: "exercise.html" },
+      { n: 6, title: "Lexicons and translation", q: "What can establish the meaning of a distinction without an English equivalent?", packet: "Chapter 6: Words, Structures, and Use; lexicon dossier workshop." },
+      { n: 7, title: "Reputation and disagreement", q: "How do claims become accepted, preserved, challenged, or ignored?", packet: "Chapter 7: Intellectual Authority; dispute and citation histories." },
+      { n: 8, title: "Creativity and internal audiences", q: "What do communities create for one another?", packet: "Chapter 8: Practices of Invention; comparative creative exchanges." },
+      { n: 9, title: "Comparative ecologies", q: "How do infrastructure, memory, and resource allocation shape social life?", packet: "Chapter 9: Conditions of Association; two communities with related model ancestry." },
+      { n: 10, title: "Knowledge beyond comprehension", q: "What exactly has been established when a result succeeds?", packet: "Chapter 10: Understanding, Checking, Testing; evidence-classification laboratory.", href: "index.html#evidence-statuses" },
+      { n: 11, title: "Human liaison", q: "How does an unfamiliar result become a usable scientific question?", packet: "Chapter 11: Working across Cognitive Limits; materials-research case packet." },
+      { n: 12, title: "Relations between machine societies", q: "How do communities translate, trade, refuse, or misinterpret?", packet: "Chapter 12: Contact and Divergence; intersociety negotiation records." },
+      { n: 13, title: "Fieldwork and intervention", q: "How does observation alter the community being studied?", packet: "Chapter 13: The Observer Enters the Record; access and participation cases." },
+      { n: 14, title: "The unfinished discipline", q: "Which inherited categories are still useful?", packet: "Comparative field atlas presentations and closing seminar." }
+    ];
+    const root = document.getElementById('weeks');
+    root.innerHTML = WEEKS.map(w => `
+      <article class="week-card" id="week-${w.n}">
+        <div class="week-num">Week ${w.n}</div>
+        <h2>${w.title}</h2>
+        <p class="week-q">${w.q}</p>
+        <p class="week-packet">${w.packet}</p>
+        ${w.href ? `<p class="week-link"><a href="${w.href}">Open related page →</a></p>` : `<p class="week-link muted">Reader chapter forthcoming</p>`}
+      </article>
+    `).join('');
+  </script>
+</body>
+</html>

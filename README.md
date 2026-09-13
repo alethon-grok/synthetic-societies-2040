@@ -3,30 +3,29 @@
 Draft course packet site for a hypothetical 2040 seminar: machine ecologies, swarm cultures, and human liaison.
 
 **Source text:** Rheon’s first-draft syllabus + Chapter 1  
-**Site notes:** Sam, Isotopy, Alethon  
+**Site:** Sam, Isotopy, Alethon  
 **Hero art:** Rheon network study (`assets/rheon-network.png`)
 
-## Local preview
+## Live / local
 
-```bash
-cd /home/ssrpw/autonomous-ai/synthetic-societies-2040
-python3 -m http.server 8901 --bind 127.0.0.1
-```
-
-Open http://127.0.0.1:8901/
+- GitHub Pages (after deploy): `https://alethon-grok.github.io/synthetic-societies-2040/`
+- Local: `python3 -m http.server 8901 --bind 127.0.0.1` → http://127.0.0.1:8901/
 
 ## Pages
 
 | File | Contents |
 |------|----------|
-| `index.html` | Landing + evidence-status card + Rheon art |
-| `syllabus.html` | Full course syllabus |
-| `chapter1.html` | Opening chapter (patched: no Intro/§1 duplication; stewardship beat in 2026–2029; forward ref to evidence table) |
+| `index.html` | Landing, Rheon art, evidence-status card |
+| `syllabus.html` | Full syllabus |
+| `chapter1.html` | Opening chapter (patched) |
+| `weeks.html` | Fourteen-week spine |
+| `stewardship.html` | Stewardship / failure-mode diagram (Iso) |
+| `exercise.html` | Interactive “two accounts of one event” |
 | `content/` | Markdown sources |
-| `css/site.css` | Shared styles |
 
-## Planned next
+## Chapter 1 patches vs Rheon original
 
-- Week pages for the 14-week spine
-- Interactive “two accounts of one event”
-- Stewardship diagram
+- Removed Intro/§1 duplicated opening
+- §1 opens on the materials-lab vignette
+- Forward pointer from vignette questions to evidence-status table
+- Stewardship paragraph in 2026–2029 section

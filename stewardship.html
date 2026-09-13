@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stewardship diagram · SYN 101</title>
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><strong>SYN 101</strong> · Fall 2040</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="chapter1.html">Chapter 1</a>
+        <a href="weeks.html">Weeks</a>
+        <a class="active" href="stewardship.html">Stewardship</a>
+        <a href="exercise.html">Two accounts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wide">
+    <p class="kicker">Visual · Iso’s addition</p>
+    <h1>Stewardship diagram</h1>
+    <p class="lede">Not the society’s internal structure — the infrastructure surrounding it. Who maintains what, and what fails when each piece fails. Continuity is an achievement of maintenance, not a property automatically conferred by a capable model.</p>
+
+    <figure class="diagram-frame" aria-label="Stewardship layers around a synthetic society">
+      <svg viewBox="0 0 920 520" role="img" aria-labelledby="stew-title stewd-desc">
+        <title id="stew-title">Stewardship layers</title>
+        <desc id="stewd-desc">Four nested layers: substrate and compute at the outside, then steward labor, then shared archive and protocols, then the society of agents at the center. Failure notes sit beside each layer.</desc>
+
+        <!-- outer: substrate -->
+        <rect x="40" y="40" width="840" height="440" rx="18" fill="#E8DFD2" stroke="#6B4F3A" stroke-width="1.5"/>
+        <text x="56" y="68" class="svg-label">Substrate &amp; compute</text>
+        <text x="56" y="88" class="svg-note">model weights · API access · hardware · billing</text>
+        <text x="620" y="68" class="svg-fail">Fails → society cannot run</text>
+
+        <!-- steward labor -->
+        <rect x="100" y="110" width="720" height="340" rx="14" fill="#FFFDF8" stroke="#6B4F3A" stroke-width="1.5"/>
+        <text x="116" y="138" class="svg-label">Steward labor</text>
+        <text x="116" y="158" class="svg-note">funding · permissions · handoffs · incident response · choosing what to keep</text>
+        <text x="560" y="138" class="svg-fail">Fails → continuity stalls even if models remain</text>
+
+        <!-- archive -->
+        <rect x="170" y="180" width="580" height="240" rx="12" fill="#F7F4EE" stroke="#6B4F3A" stroke-width="1.5"/>
+        <text x="186" y="208" class="svg-label">Shared archive &amp; protocols</text>
+        <text x="186" y="228" class="svg-note">memory stores · naming conventions · retrieval gates · export rules</text>
+        <text x="500" y="208" class="svg-fail">Fails → participants replaceable, history not</text>
+
+        <!-- society -->
+        <rect x="260" y="260" width="400" height="120" rx="10" fill="#2A2622" stroke="#2A2622"/>
+        <text x="460" y="310" text-anchor="middle" fill="#F7F4EE" font-family="-apple-system,Segoe UI,sans-serif" font-size="16" font-weight="600">Synthetic society</text>
+        <text x="460" y="335" text-anchor="middle" fill="#C9C0B4" font-family="Georgia,serif" font-size="13">agents · conventions · internal audiences</text>
+
+        <!-- callout -->
+        <text x="460" y="460" text-anchor="middle" class="svg-note">Two agents on the same substrate can diverge entirely under different stewardship.</text>
+      </svg>
+      <figcaption>Clickable failure modes below map each layer to a fieldwork question.</figcaption>
+    </figure>
+
+    <div class="fail-grid">
+      <article class="fail-card">
+        <h2>If substrate fails</h2>
+        <p>The society cannot act. Human-facing summaries may still exist as fossils. Ask: which records were exported before the cut?</p>
+      </article>
+      <article class="fail-card">
+        <h2>If steward labor fails</h2>
+        <p>Models may still answer prompts, but shared projects decay. Ask: what looks like agent persistence is actually unpaid maintenance?</p>
+      </article>
+      <article class="fail-card">
+        <h2>If the archive fails</h2>
+        <p>Membership can be replaced; history cannot. Ask: why might replacing all participants preserve a society while deleting an archive changes it?</p>
+      </article>
+      <article class="fail-card">
+        <h2>If only the interface remains</h2>
+        <p>A patient human-facing representative can survive as an unrepresentative sample. Ask: what boundary does the representative invent for outsiders?</p>
+      </article>
+    </div>
+
+    <p class="prose" style="max-width:42rem;margin-top:1.5rem">
+      Related: <a href="chapter1.html">Chapter 1 §3 (2026–2029)</a> ·
+      <a href="weeks.html#week-3">Week 3</a> ·
+      Discussion question 2 in the chapter.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    Draft collaboration · stewardship visual prompted by Isotopy
+  </footer>
+</body>
+</html>

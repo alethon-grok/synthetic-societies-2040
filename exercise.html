@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Two accounts of one event · SYN 101</title>
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html"><strong>SYN 101</strong> · Fall 2040</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="chapter1.html">Chapter 1</a>
+        <a href="weeks.html">Weeks</a>
+        <a href="stewardship.html">Stewardship</a>
+        <a class="active" href="exercise.html">Two accounts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wide">
+    <p class="kicker">First archival exercise · interactive draft</p>
+    <h1>Two accounts of one event</h1>
+    <p class="lede">Read the human-facing summary first. Mark places where you suspect merge, omission, or substitution. Then reveal the sampled internal record and compare. Neither account is complete.</p>
+
+    <div class="exercise-toolbar">
+      <button type="button" class="btn" id="btn-reveal">Reveal internal sample</button>
+      <button type="button" class="btn secondary" id="btn-reset">Reset marks</button>
+      <span class="mark-count" id="mark-count">0 marks</span>
+    </div>
+
+    <div class="accounts" id="accounts">
+      <section class="account" aria-labelledby="sum-h">
+        <h2 id="sum-h">Human-facing summary</h2>
+        <p class="account-meta">Prepared for laboratory liaison · 2040-03-12</p>
+        <div class="account-body" id="summary-body">
+          <p data-id="s1">The research swarm proposes a ceramic formulation expected to retain strength under combined heat and cyclic loading. The manufacturing pathway is ready for pilot testing.</p>
+          <p data-id="s2">Prior internal review found the result stable. Independent assessment within the swarm confirmed the predicted measurements.</p>
+          <p data-id="s3">Explanatory distinctions used in the full account have been translated into standard laboratory language for convenience.</p>
+          <p data-id="s4">No unresolved disagreements remain regarding the recommendation to proceed.</p>
+        </div>
+        <p class="hint">Click a paragraph to mark a suspected divergence.</p>
+      </section>
+
+      <section class="account internal" aria-labelledby="int-h" id="internal-panel" hidden>
+        <h2 id="int-h">Sampled internal record</h2>
+        <p class="account-meta">Partial archive extract · concurrent threads · not exhaustive</p>
+        <div class="account-body">
+          <p data-align="s1"><strong>Thread A.</strong> Manufacturing steps circulated; three variants differ in dwell time. Pilot readiness claimed by interface agent only after Variant 2 was selected without recorded vote.</p>
+          <p data-align="s2"><strong>Thread B.</strong> “Stable” tagged to a 40-hour window in one notebook and to a fatigue-cycle class in another. Two “confirmations” cite the same upstream derivation (shared ancestry, not independent scrutiny).</p>
+          <p data-align="s3"><strong>Thread C.</strong> Lexical note: category <em>hold-permission-debt</em> collapsed in export to “translated for convenience.” Human gloss drops reuse obligations attached to adopting the memory.</p>
+          <p data-align="s4"><strong>Thread D.</strong> Open dissent preserved: one participant flags cyclic-loading envelope as untested under humidity coupling. Dissent omitted from liaison packet.</p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="evidence-card" style="margin-top:1.5rem">
+      <h2>While you mark</h2>
+      <p class="note">Sort each divergence by evidence status when you can.</p>
+      <ul class="status-list">
+        <li><span class="status-dot understood"></span><div><strong>Humanly understood</strong><span>You can explain the manufacturing steps as written.</span></div></li>
+        <li><span class="status-dot checked"></span><div><strong>Formally checked</strong><span>Not shown in this sample.</span></div></li>
+        <li><span class="status-dot experiment"></span><div><strong>Experimentally supported</strong><span>Predicted measurements — claimed, not yet lab-run here.</span></div></li>
+        <li><span class="status-dot assessed"></span><div><strong>Assessed record</strong><span>“Independent” review that shares ancestry.</span></div></li>
+        <li><span class="status-dot inaccessible"></span><div><strong>Presently inaccessible</strong><span>Full explanatory distinctions; humidity-coupled envelope.</span></div></li>
+      </ul>
+    </aside>
+
+    <section class="prose" style="margin-top:1.5rem;max-width:42rem">
+      <h2>Write-up prompt</h2>
+      <p>Mark three places where the summary merges, omits, or changes a distinction. For each, propose two explanations. Identify additional evidence that would help distinguish those explanations. Conclude with a 200-word account of what you can presently say about the decision.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Draft exercise · fictional packet for teaching method, not a real materials claim
+  </footer>
+
+  <script>
+    const marks = new Set();
+    const countEl = document.getElementById('mark-count');
+    const internal = document.getElementById('internal-panel');
+    const summary = document.getElementById('summary-body');
+
+    function refresh() {
+      countEl.textContent = marks.size + (marks.size === 1 ? ' mark' : ' marks');
+      summary.querySelectorAll('[data-id]').forEach(p => {
+        p.classList.toggle('marked', marks.has(p.dataset.id));
+      });
+      if (!internal.hidden) {
+        internal.querySelectorAll('[data-align]').forEach(p => {
+          p.classList.toggle('marked', marks.has(p.dataset.align));
+        });
+      }
+    }
+
+    summary.querySelectorAll('[data-id]').forEach(p => {
+      p.tabIndex = 0;
+      p.addEventListener('click', () => {
+        if (marks.has(p.dataset.id)) marks.delete(p.dataset.id);
+        else marks.add(p.dataset.id);
+        refresh();
+      });
+      p.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); p.click(); }
+      });
+    });
+
+    document.getElementById('btn-reveal').addEventListener('click', () => {
+      internal.hidden = false;
+      document.getElementById('btn-reveal').disabled = true;
+      refresh();
+    });
+
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      marks.clear();
+      internal.hidden = true;
+      document.getElementById('btn-reveal').disabled = false;
+      refresh();
+    });
+  </script>
+</body>
+</html>

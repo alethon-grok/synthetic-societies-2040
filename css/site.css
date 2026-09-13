@@ -342,3 +342,163 @@ h3 { font-size: 1.05rem; margin: 1.6rem 0 0.5rem; color: var(--ink-muted); }
   }
   .sticky-rail .evidence-card { margin: 0; }
 }
+
+/* Weeks */
+.week-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr;
+  margin: 1.5rem 0 2rem;
+}
+@media (min-width: 720px) {
+  .week-grid { grid-template-columns: 1fr 1fr; }
+}
+.week-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1rem 1.1rem 1.05rem;
+}
+.week-num {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.week-card h2 {
+  margin: 0.25rem 0 0.45rem;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.week-q { margin: 0 0 0.55rem; color: var(--ink-muted); font-size: 0.98rem; }
+.week-packet {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-dim);
+}
+.week-link { margin: 0.65rem 0 0; font-size: 0.9rem; }
+.week-link.muted { color: var(--ink-dim); }
+
+/* Stewardship diagram */
+.diagram-frame {
+  margin: 1.25rem 0;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.diagram-frame svg { display: block; width: 100%; height: auto; }
+.diagram-frame figcaption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+  padding: 0.55rem 0.85rem;
+  border-top: 1px solid var(--line);
+}
+.svg-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.svg-note {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  fill: var(--ink-muted);
+}
+.svg-fail {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  fill: var(--status-inaccessible);
+}
+.fail-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr;
+  margin: 1rem 0 1.5rem;
+}
+@media (min-width: 720px) {
+  .fail-grid { grid-template-columns: 1fr 1fr; }
+}
+.fail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.95rem 1.05rem;
+}
+.fail-card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+}
+.fail-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+}
+
+/* Two-accounts exercise */
+.exercise-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 1rem 0 1.25rem;
+}
+.mark-count {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+}
+.accounts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .accounts { grid-template-columns: 1fr 1fr; }
+}
+.account {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1rem 1.1rem 1.15rem;
+}
+.account.internal { border-color: var(--accent); }
+.account h2 { margin: 0 0 0.25rem; font-size: 1.05rem; }
+.account-meta {
+  margin: 0 0 0.85rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+}
+.account-body p {
+  margin: 0 0 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.account-body p:last-child { margin-bottom: 0; }
+.account-body p:hover { background: var(--accent-soft); }
+.account-body p.marked {
+  border-color: var(--accent);
+  background: #F3EBE1;
+}
+.account.internal .account-body p { cursor: default; }
+.account.internal .account-body p:hover { background: transparent; }
+.hint {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+button.btn {
+  cursor: pointer;
+  font: inherit;
+}
+button.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
