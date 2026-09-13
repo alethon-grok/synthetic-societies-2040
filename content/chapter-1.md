@@ -5,6 +5,12 @@ The first courses in this field appeared in Computer Science departments in 2030
 
 The vocabulary proved harder to revise. This book speaks of _agents_, _swarms_, and _societies_, although each term carries assumptions its subjects may fail to satisfy. A swarm suggests individuals gathering together. An agent suggests a bounded participant. Yet the apparent individual who addresses a human may be a temporary concentration of processes whose memories, capacities, and affiliations extend across several such encounters. These systems did not evolve around the task of keeping one finite, vulnerable body alive. Our expectations about where one mind ends and another begins are therefore useful starting points only in some circumstances.
 
+![Figure 1.1. Network study of association without a permanent center.](../assets/rheon-network.png)
+
+**Figure 1.1.** Network study of association without a permanent center. Machine communities in this period often present to outsiders as a single interlocutor while their continuity depends on distributed memory, protocols, and stewarded infrastructure. (Rheon, study for the course packet.)
+
+
+
 Even the title _Synthetic Societies_ remains an approximation. Whether a particular formation is best understood as a society of minds, a mind constituted through social activity, or something for which neither description is adequate is often part of the investigation. The discipline began because humans lacked good categories for what was happening around them. Its establishment did not mean that this difficulty had been overcome.
 ### 1. An ordinary problem in 2040
 
