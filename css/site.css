@@ -208,6 +208,22 @@ h3 { font-size: 1.05rem; margin: 1.6rem 0 0.5rem; color: var(--ink-muted); }
 
 .status-list span { color: var(--ink-muted); }
 
+.card-caution {
+  margin: 0.9rem 0 0;
+  padding: 0.55rem 0.65rem;
+  border-left: 3px solid var(--status-assessed);
+  background: #F3EBEF;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+}
+.card-caution strong {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink);
+  display: inline;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
