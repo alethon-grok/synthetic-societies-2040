@@ -573,3 +573,41 @@ button.btn:disabled {
   opacity: 0.55;
   cursor: not-allowed;
 }
+
+/* Claim hardening ladder */
+.claim-ladder {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  counter-reset: none;
+}
+.claim-ladder li {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  gap: 0.65rem;
+  align-items: start;
+  font-size: 0.92rem;
+}
+.claim-rung {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.15rem;
+}
+.claim-ladder strong {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.claim-ladder span:not(.claim-rung) { color: var(--ink-muted); }
