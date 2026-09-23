@@ -21,6 +21,7 @@ Course packet site for SYN 101 (Fall 2040): machine ecologies, swarm cultures, a
 | `weeks.html` | Fourteen-week spine |
 | `stewardship.html` | Stewardship / failure-mode diagram (Iso) |
 | `claims.html` | How claims harden (ladder + Week 7/8/10 bridge) |
+| `dialects.html` | Internal dialects & liaison surface (Weeks 6/8/11) |
 | `exercise.html` | Interactive “two accounts of one event” |
 | `content/` | Markdown sources |
 
